@@ -1,8 +1,8 @@
 // const {Client} = require("pg");
-const mysql = require("mysql2/promise");
+const mysql = require("mysql2");
 const db = mysql.createConnection({
   host: "localhost",
-  user: "admin",
+  user: "root",
   password: "pavan1982",
   database: "register",
 });
