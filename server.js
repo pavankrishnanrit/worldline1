@@ -26,17 +26,18 @@ app.post("/register", (req, res) => {
 		[fname, lname, email, address],
 		(error, result) => {
 			if (!error) {
-				res.redirect("details");
+				res.redirect("details/"+result.insertId);
 			} else {
 				console.log(error);
 			}
 		}
 	);
 });
-app.get("/details", (req, res) => {
-	db.query("SELECT * FROM register", (error, result) => {
+app.get("/details/:id", (req, res) => {
+	const {id}=req.params
+	db.query("SELECT * FROM register where id=?",[id], (error, result) => {
 		if (!error) {
-			res.render("details", {result: result.rows});
+			res.render("details", {result: result[0]});
 		} else {
 			console.log(error);
 		}
