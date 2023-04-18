@@ -2,9 +2,9 @@
 const mysql = require("mysql2/promise");
 const db = mysql.createConnection({
   host: "localhost",
-  user: "postgres",
-  password: "Prasanna1308",
-  database: "prasanna",
+  user: "root",
+  password: "pavan1982",
+  database: "register",
 });
 
 // const client = new Client({
