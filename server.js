@@ -50,7 +50,7 @@ app.post("/register", (req, res) => {
 
 app.get("/details/:id", (req, res) => {
   const { id } = req.params;
-  db.query("SELECT * FROM employee where id=?", [id], (error, result) => {
+  db.query("SELECT * FROM employee ", (error, result) => {
     if (!error) {
       res.render("details", { result: result[0] });
     } else {
