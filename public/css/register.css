@@ -82,7 +82,9 @@ form div input {
 }
 
 .data{
+	padding: 10px;
+	height: 100vh;
 	background: cornflowerblue;
 	color: white;
-	
+
 }
