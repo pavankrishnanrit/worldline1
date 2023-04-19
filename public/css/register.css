@@ -89,6 +89,7 @@ form div input {
 
 }
 
-h1{
+.h1{
+	padding: 10px;
 	color:rgb(13, 13, 168);
 }
