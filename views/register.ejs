@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Register</title>
-		<link rel="stylesheet" href="../css/register.css" />
-	</head>
-	<body>
-		<section>
-			<div class="mainDiv div-left">
-				<div class="subLeft">
-					<h1>Register as a Student</h1>
-				</div>
-			</div>
-			<div class="mainDiv div-right">
-				<form action="/register" method="POST">
-					<div>
-						<label for="fname">First Name</label>
-						<input
-							type="text"
-							required
-							name="fname"
-							id="fname"
-							placeholder="Enter Name"
-						/>
-					</div>
-					<div>
-						<label for="lname">Last Name</label>
-						<input
-							type="text"
-							required
-							name="lname"
-							id="lname"
-							placeholder="Enter Last Name"
-						/>
-					</div>
-					<div>
-						<label for="email">Email</label>
-						<input
-							type="email"
-							required
-							name="email"
-							id="email"
-							placeholder="Enter Name"
-						/>
-					</div>
-					<div>
-						<label for="address">Address</label>
-						<input
-							type="text"
-							required
-							id="address"
-							name="address"
-							placeholder="Enter Address"
-						/>
-					</div>
-					<div>
-						<input class="button" type="submit" value="Register" />
-					</div>
-				</form>
-			</div>
-		</section>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <section>
+      <div class="mainDiv div-left">
+        <div class="subLeft">
+          <h1>Register as an Employee</h1>
+        </div>
+      </div>
+      <div class="mainDiv div-right">
+        <form action="/register" method="POST">
+          <div>
+            <label for="ename">Employee Name</label>
+            <input
+              type="text"
+              required
+              name="ename"
+              id="ename"
+              placeholder="Enter Employee Name"
+            />
+          </div>
+          <div>
+            <label for="email">Employee Email</label>
+            <input
+              type="email"
+              required
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div>
+            <label for="mobile">Mobile Number</label>
+            <input
+              type="number"
+              required
+              name="mobile"
+              id="mobile"
+              placeholder="Enter Mobile Number"
+            />
+          </div>
+          <div>
+            <label for="gender">Gender</label>
+            <input
+              type="text"
+              required
+              id="gender"
+              name="gender"
+              placeholder="Enter Gender"
+            />
+          </div>
+          <div>
+            <label for="qualification">Qualification</label>
+            <input
+              type="text"
+              required
+              id="qualification"
+              name="qualification"
+              placeholder="Enter Qualification"
+            />
+          </div>
+          <div>
+            <label for="currentExperience"
+              >Years of experience in current</label
+            >
+            <input
+              type="text"
+              required
+              id="currentExperience"
+              name="currentExperience"
+              placeholder="Enter Current Experience"
+            />
+          </div>
+          <div>
+            <label for="pastExperience"
+              >Years of experience in past</label
+            >
+            <input
+              type="text"
+              required
+              id="pastExperience"
+              name="pastExperience"
+              placeholder="Enter Past Experience"
+            />
+          </div>
+          <div>
+            <label for="dateJoin"
+              >Date of Joining</label
+            >
+            <input
+              type="date"
+              required
+              id="dateJoin"
+              name="dateJoin"
+              placeholder="Enter Date of Joining"
+            />
+          </div>
+          <div>
+            <input class="button" type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

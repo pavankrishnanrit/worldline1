@@ -1,25 +1,18 @@
-// const {Client} = require("pg");
 const mysql = require("mysql2");
 const db = mysql.createConnection({
   host: "localhost",
-  user: "admin",
+  user: "root",
   password: "pavan1982",
   database: "register",
 });
 
-// const client = new Client({
-// 	host: "localhost",
-// 	user: "postgres",
-// 	password: "Prasanna1308",
-// 	database: "prasanna",
-// });
-
-// client.connect((err) => {
-// 	if (!err) {
-// 		console.log("Connected");
-// 	} else {
-// 		console.log("NOt connected");
-// 	}
-// });
+db.connect((err) => {
+	if (!err) {
+		console.log("Connected");
+	} else {
+		console.log("NOt connected");
+		// console.log(err);
+	}
+});
 
 module.exports = db;
